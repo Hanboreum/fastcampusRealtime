@@ -8,7 +8,7 @@ public class Movie {
       super();
    }
 
-   public Movie(String title, int time) {
+   public Movie(String title, int time) { //오버로드 인수의 타입 혹은 갯수를 다르게
       this.title = title;
       this.time = time;
    }

@@ -6,7 +6,6 @@ public class Main {
         // void 코드 실행 끝
         System.out.println("Hello world!");
         //로직 (객체 생성, 사용, if,for)
-         Person p =new Person("kim");
-         p.eat();
+
     }
 }
