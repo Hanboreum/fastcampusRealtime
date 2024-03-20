@@ -52,6 +52,8 @@ class Controller{
     Logic logic = new Logic();
 
     public Product registerProduct(Product product){ //반환타입?
+        //상품을 조회하려면 상품이 들어있어야지. 근데 db가 없다. -> 자바 컬렉션을 쓸 것.
+        //db대신 map 사용
         //2.view에게 요청 받음 logic에게 일 시키기
         Product savedProduct = logic.addProduct(product);
         //4. logic에게 받은 결과물을 view에게 준다.
@@ -75,6 +77,7 @@ class Logic{
     int id =0; //key
 
     //3.controller에게 전달받은, 요청받은 일 수행 한 다음, 결과를 controller에게 다시 전달.
+
     //상품 등록
     public Product addProduct(Product product){
        db.put(id, product); //value는 view로부터 받아 저장 //왜 딸기만 뜨는데?키 값이 1이니까..키값늘리기
